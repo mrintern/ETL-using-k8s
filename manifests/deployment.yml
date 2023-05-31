@@ -1,1 +1,17 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-image-name
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-image-name
+  template:
+    metadata:
+      labels:
+        app: my-image-name
+    spec:
+      containers:
+        - name: my-image-name
+          image: my-registry/my-image-name # Replace with your image location if pushed to a registry
