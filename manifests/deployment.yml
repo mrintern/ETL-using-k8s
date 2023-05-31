@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
         - name: etl-app
-          image: nicoxdockerhub/etl-app:latest # Replace with your image location if pushed to a registry
+          image: nicoxdockerhub/etl-app:latest 
