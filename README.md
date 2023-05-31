@@ -11,5 +11,5 @@ A simple example of an ETL job using KinD (kubernetes in docker). Just for fun.
 2. Pull image
 `docker pull nicoxdockerhub/etl-app:latest`
 3. Run deployment 
-`kubectl apply -f deployment.yml`
+`kubectl apply -f manifests/deployment.yml`
 
