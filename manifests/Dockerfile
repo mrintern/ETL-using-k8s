@@ -8,7 +8,7 @@ WORKDIR /etl-app
 COPY etl-app.py .
 
 # Install dependencies
-RUN pip install requests
+RUN pip3 install requests
 
 # Set command to run the Python code
-CMD ["python", "etl-app.py"]
+CMD ["python3", "etl-app.py"]
