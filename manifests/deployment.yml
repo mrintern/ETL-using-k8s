@@ -15,3 +15,15 @@ spec:
       containers:
         - name: etl-app
           image: nicoxdockerhub/etl-app:latest 
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+          periodSeconds: 30     # Adjust the periodSeconds value
+          timeoutSeconds: 30     # Adjust the timeoutSeconds value
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+          periodSeconds: 30     # Adjust the periodSeconds value
+          timeoutSeconds: 30     # Adjust the timeoutSeconds value
