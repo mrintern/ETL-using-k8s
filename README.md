@@ -1,6 +1,8 @@
 # Under Construction! You've been warned ;)
 # ETL-using-k8s
-A simple example of an ETL job using KinD (kubernetes in docker). Just for fun.
+A simple example of an ETL job using KinD (kubernetes in docker).
+Requests data from the weather API and sends to a mysql table. 
+Eventually, this app will implement airflow and spark to do this in a more scalable way.
 
 # Requirements
 - KinD (Kubernetes in Docker)
