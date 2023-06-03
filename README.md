@@ -17,7 +17,7 @@ Eventually, this app will implement airflow and spark to do this in a more scala
 `kubectl apply -f manifests/deployment.yml`
 
 ### TODO
-1. containerize etl-app
-2. test etl app on k8s 
-3. write a mysql pod manifest
-4. test etl-app in k8s again
+3. write a mysql pod manifest (https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
+4. manually interact with mysql pod, create a table
+5. update etl-app with mysql connection creds
+6. test mysql app again
