@@ -11,13 +11,11 @@ Eventually, this app will implement airflow and spark to do this in a more scala
 # Demo 
 1. (if running locally) Setup kind cluster 
 `kind create cluster --name etl-using-k8s`
-2. Pull image
-`docker pull nicoxdockerhub/etl-app:latest`
-3. Run deployment 
+2. Run the deployment 
 `kubectl apply -f manifests/deployment.yml`
 
 ### TODO
-3. write a mysql pod manifest (https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
-4. manually interact with mysql pod, create a table
-5. update etl-app with mysql connection creds
-6. test mysql app again
+1. write a mysql pod manifest (https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/)
+2. manually interact with mysql pod, create a table
+3. update etl-app with mysql connection creds
+4. test mysql app again
