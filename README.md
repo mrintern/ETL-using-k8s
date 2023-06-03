@@ -14,3 +14,8 @@ A simple example of an ETL job using KinD (kubernetes in docker). Just for fun.
 3. Run deployment 
 `kubectl apply -f manifests/deployment.yml`
 
+### TODO
+1. containerize etl-app
+2. test etl app on k8s 
+3. write a mysql pod manifest
+4. test etl-app in k8s again
